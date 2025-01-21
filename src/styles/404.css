@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa;
+}
+
+a {
+    color: #3480e2;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.cart-image {
+    max-height: 300px;
+}

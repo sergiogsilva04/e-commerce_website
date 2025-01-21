@@ -1,0 +1,27 @@
+blue color: 053067
+orange color: f15418
+dark hover: c74612
+link hover: 3480e2
+
+
+NOTAS:
+
+O botão de login está visível no dropdown do perfil, para fácil acesso
+Página 404 no header para fácil acesso de visualização, numa situação real não estaria lá.
+Caso queira ver a página 404 a funcionar real, basta abrir a página de um item e mudar o Id no url para um que não exista
+Botão de login e logout a funcionar.
+A validação do formulário de contacto não está a funcionar por parte do Bootstrap - https://prnt.sc/HqdJtZ6qPGii
+
+
+$('#AIChatForm .dropdown').on('show.bs.dropdown', function () {
+    const dropdown = $(this);
+    const spaceBelow = $(window).height() - (dropdown.offset().top + dropdown.outerHeight()) - 20;
+
+    if (spaceBelow < dropdown.find('.dropdown-menu').outerHeight())
+        dropdown.addClass('dropup');
+    else
+        dropdown.removeClass('dropup');
+});
+
+ver dropdown perfil visao mobile 
+

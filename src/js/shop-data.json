@@ -1,0 +1,117 @@
+{
+    "products": [
+        {
+            "id": "product-1",
+            "name": "Placa Gráfica Asus Dual Radeon RX 7600 V2 8GB GDDR6 OC Edition",
+            "category": "products",
+            "description": "Construídas com base na inovadora arquitetura AMD RDNA™ 3 com tecnologia de chiplet, as placas de vídeo AMD Radeon™ RX 7600 oferecem desempenho, recursos visuais e eficiência de última geração em Full HD e mais além.",
+            "price": "299,90",
+            "stars": 5,
+            "stock": 0,
+            "image": "90yv0ih2-m0na00-7.png"
+        },
+        {
+            "id": "product-2",
+            "name": "Tablet Lenovo Tab K10 10.3\"3GB/32GB Wi-Fi+4G Abyss Blue",
+            "category": "products",
+            "description": "O tablet Lenovo Tab K10 apresenta um design metálico para fornecer o melhor feeling de manuseamento. O potente processador MediaTek Helio P22T e a rápida memória RAM de 3 GB oferecem desempenho incrível para executar aplicativos, alternar menus, jogar, aprender e muitos mais. E graças à conectividade Wi-Fi 2.4GHz/5GHz dual band e 4G LTE, poderá manter-se ligado à internet de alta velocidade onde quer que esteja, seja em casa ou no exterior.",
+            "price": "99,90",
+            "stars": 0,
+            "stock": 500,
+            "image": "tablet_lenovo_tab_k10_10.3_2k_3_32gb_lte_preto_12_.png"
+        },
+        {
+            "id": "product-3",
+            "name": "Puzzle Educa Mapa Histórico Do Mundo 8000 Peças",
+            "category": "products",
+            "description": "A Educa® oferece a coleção de Puzzles Adultos mais completa do mercado, com formatos desde 300 a 42000 peças e com as melhores imagens. Tamanho aproximado do puzzle montado: 192 x 136 cm. 2 bolsas com 4000 peças. Inclui folha-modelo.",
+            "price": "34,90",
+            "stars": 2,
+            "stock": 1000,
+            "image": "18017_01_high.png"
+        },
+        {
+            "id": "product-4",
+            "name": "Máquina de Barbear Braun Series 6 N1200 S Preta",
+            "category": "products",
+            "description": "A máquina de barbear elétrica Braun Series 6 para homem inclui uma cabeça oscilante SensoFlex e lâminas SensoFoil testadas dermatologicamente que permitem a adaptação a baixa pressão para a proximidade, mantendo-se sensível na sua pele. A bateria Li-Ion proporciona até 3 semanas de barbear e uma recarga rápida de 5 minutos. Esta máquina de barbear elétrica para homem é 100% à prova de água para utilização a seco ou molhado. Compatível com o sistema EasyClick.",
+            "price": "104,90",
+            "stars": 5,
+            "stock": 287,
+            "image": "p046748_a.png"
+        },
+        {
+            "id": "product-5",
+            "name": "Câmara de Segurança TP-Link Tapo TC65 3MP Outdoor IP66 Security Wi-Fi",
+            "category": "products",
+            "description": "Receba notificações instantâneas e verifique os alertas quando o movimento for detetado. Estas características vão ajudar a proteger a sua habitação durante o dia e noite.",
+            "price": "34,90",
+            "stars": 2,
+            "stock": 6,
+            "image": "61zas4-gnsl._ac_sl1500__1.png"
+        },
+        {
+            "id": "product-6",
+            "name": "Pistola de Massagem Xiaomi Massage Gun Mini",
+            "category": "products",
+            "description": "Leve e compacta, com a qualidade que esperaria de uma boa pistola de massagem. A tecnologia inteligente de deteção de pressão fornece a quantidade correta de força e frequência com feedback visual fornecido pelo manómetro. Sente-se e relaxe enquanto alivia os músculos doloridos com segurança e eficácia.",
+            "price": "99,90",
+            "stars": 4,
+            "stock": 183,
+            "image": "p056053_2.png"
+        },
+        {
+            "id": "product-7",
+            "name": "Router TP-Link Archer AXE75 AXE5400 Tri-Band WiFi 6E Mesh Gigabit",
+            "category": "products",
+            "description": "O WiFi 6E introduz a nova banda de 6 GHz sem qualquer sobreposição ou interferência de outras bandas e equipamentos mais antigos. Isto significa uma frequência livre de congestionamento que oferece mais largura de banda, velocidade mais rápida e menor latência.",
+            "price": "167,90",
+            "stars": 5,
+            "stock": 0,
+            "image": "archer_axe75_f_large_20211227080932p.png"
+        },
+        {
+            "id": "product-8",
+            "name": "Puzzle Goula Silhuetas da Quinta 12 Peças",
+            "category": "products",
+            "description": "Enigma divertido de 12 peças. Objectos, animais e coisas de um ambiente agrícola. Fundo monocolor para realçar a silhueta da peça e facilitar a sua colocação.",
+            "price": "9,90",
+            "stars": 1,
+            "stock": 0,
+            "image": "p042476_1.png"
+        },
+        {
+            "id": "product-9",
+            "name": "Cabo Xiaomi Mi Braided USB Type-C 1m Preto",
+            "category": "products",
+            "description": "Conecte o seu telefone, tablet e uma série de outros dispositivos compatíveis, incluindo reprodutores multimédia ou câmaras, ao seu computador ou à sua TV, com o cabo de dados Xiaomi Type-C, em fibra de nylon trançado.",
+            "price": "7,90",
+            "stars": 1,
+            "stock": 50,
+            "image": "1_88_1.png"
+        },
+        {
+            "id": "product-10",
+            "name": "Playmobil: Carro da Polícia com Luzes e Som 35 Peças | Idades 4+ | Item 6920",
+            "category": "products",
+            "description": "O Carro da Polícia com Luzes e Som da Playmobil City Action vem com um tejadilho que sai e tem lugares para 4 figuras.",
+            "price": "25,90",
+            "stars": 5,
+            "stock": 2000,
+            "image": "p040919_1.png"
+        }
+    ],
+    "services": [
+        {
+            "id": "service-1",
+            "name": "Vou construir o seu site Wix profissional",
+            "category": "services",
+            "description": "O Carro da Polícia com Luzes e Som da Playmobil City Action vem com um tejadilho que sai e tem lugares para 4 figuras.",
+            "price": "1000",
+            "stars": 1,
+            "stock": 2000,
+            "image": "wix.png"
+        }
+    ],
+    "partners": []
+}

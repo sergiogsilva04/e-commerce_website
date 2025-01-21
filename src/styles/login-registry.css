@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(90deg, rgba(5, 48, 103, 1) 35%, rgba(230, 123, 0, 1) 100%);
+}
+
+form {
+    width: 35%;
+    border-radius: 20px;
+    padding: 50px;
+    -webkit-box-shadow: 0 3px 10px -2px rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 3px 10px -2px rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, rgba(5, 48, 103, 1) 35%, rgba(230, 123, 0, 1) 100%);
+}
+
+.btn-primary:hover {
+    font-weight: bold;
+    box-shadow: 0 14px 28px rgba(5, 48, 103, 0.25), 0 10px 10px rgba(5, 48, 103, 0.22) !important;
+    transform: translate(0px, -4px);
+}
+
+.form-control {
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+}
+
+a {
+    color: #3480e2 !important;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+.or-container {
+    color: #a5a5a5;
+}
+
+.line-separator {
+    background-color: #a5a5a5;
+    flex-grow: 5;
+    height: 1px;
+}
+
+.or-label {
+    flex-grow: 1;
+}
+
+.btn-login {
+    box-shadow: 0 1px 2px 1px #ddd;
+}
+
+.btn-login:hover {
+    text-decoration: none !important;
+    font-weight: bold;
+    box-shadow: 0 7px 14px rgba(5, 48, 103, 0.25), 0 5px 5px rgba(5, 48, 103, 0.22) !important;
+}
+
+.btn-login img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,85 @@
+.contacts,
+.contacts-form {
+    -webkit-box-shadow: 0 3px 10px -2px rgba(5, 48, 103, 0.8) !important;
+    box-shadow: 0 3px 10px -2px rgba(5, 48, 103, 0.8) !important;
+    border-radius: 15px;
+    background-color: #e6e5e5;
+}
+
+.contacts p a {
+    color: #3480e2;
+}
+
+.contacts p a:hover {
+    text-decoration: underline !important;
+}
+
+.contacts li {
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: -webkit-transform .7s;
+    -moz-transition: -moz-transform .7s;
+    -ms-transition: -ms-transform .7s;
+    -o-transition: -o-transform .7s;
+    transition: transform .7s;
+}
+
+.contacts li:hover {
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+}
+
+.contacts li:hover .icon {
+    background: rgb(230, 123, 0) !important;
+}
+
+.contacts li .icon i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.contacts .icon i {
+    color: #FFF;
+}
+
+.contacts li:nth-child(1):hover i {
+    color: #4267b2;
+}
+
+.contacts li:nth-child(2):hover i {
+    color: #c32aa3;
+}
+
+.contacts li:nth-child(3):hover i {
+    color: #000;
+}
+
+.contacts li:nth-child(4):hover i {
+    color: #000;
+}
+
+.contacts li:nth-child(1) .icon {
+    background: #4267b2;
+}
+
+.contacts li:nth-child(2) .icon {
+    background: #c32aa3;
+}
+
+.contacts li:nth-child(3) .icon {
+    background: #000;
+}
+
+.contacts li:nth-child(4) .icon {
+    background: #000;
+}
+
+.contacts-form .required-star {
+    color: #dc3545;
+}

@@ -1,0 +1,7 @@
+.quantity-input {
+    width: 80px;
+}
+
+.item-price {
+    float: inline-end !important;
+}

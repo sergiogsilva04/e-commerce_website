@@ -1,0 +1,25 @@
+.image-col,
+.product-info-col {
+    -webkit-box-shadow: 0 3px 10px -2px rgba(5, 48, 103, 0.8) !important;
+    box-shadow: 0 3px 10px -2px rgba(5, 48, 103, 0.8) !important;
+    border-radius: 15px;
+    background-color: #e6e5e5;
+}
+
+#itemPrice, #addToCartButton {
+    color: #f15418;
+}
+
+#addToCartButton {
+    background: #f15418;
+}
+
+#addToCartButton:hover {
+    font-weight: bold;
+    box-shadow: 0 14px 28px rgba(5, 48, 103, 0.25), 0 10px 10px rgba(5, 48, 103, 0.22) !important;
+    transform: translate(0px, -4px);
+}
+
+.star-checked {
+    color: #ff9f43;
+}

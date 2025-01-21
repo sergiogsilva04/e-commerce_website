@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.nav-link {
+    color: #f15418 !important;
+}
+
+.nav-link:hover {
+    color: #053067 !important;
+    text-decoration: none !important;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #053067;
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-link.active {
+    color: #053067 !important;
+}
+
+.nav-link.active::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #053067;
+    display: block;
+    transition: 0.5s;
+}
+
+.btn-floating {
+    position: fixed;
+    bottom: 30px;
+}
+
+#scrollToTopButton {
+    right: 30px;
+    display: none;
+    z-index: 9000;
+    background-color: #053067;
+}
+
+#shoppingCartButton {
+    z-index: 9000;
+    left: 30px;
+}
+
+#copyright strong {
+    color: #f15418;
+}
+
+footer h5 {
+    color: #f15418;
+}
+
+footer a:hover {
+    color: #3480e2 !important;
+}
+
+footer a img:hover {
+    box-shadow: 0 14px 28px rgba(5, 48, 103, 0.25), 0 10px 10px rgba(5, 48, 103, 0.22) !important;
+    transform: translate(0px, -4px);
+}
