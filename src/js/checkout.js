@@ -19,28 +19,23 @@ $(document).ready(function () {
     const translateCategory = {
         "products": "Produtos",
         "services": "Serviços",
-        "partners": "Parceiros"
     }
 
     const shoppingCart = $("#shoppingCart")[0];
 
     shoppingCart.innerHTML = `
         <div class="list-group-item d-flex justify-content-between mt-5 border-2 rounded-2 align-items-center">
-            <form>
-                <div class="form-group">
-                    <label>Tens algum código de desconto?</label>
+            <div class="form-group w-100">
+                <label>Tens algum código de desconto?</label>
 
-                    <div class="input-group mt-2">
-                        <input type="text" class="form-control me-2 rounded-2" name="coupon"
-                            placeholder="Código de desconto">
+                <div class="input-group mt-2">
+                    <input type="text" class="form-control rounded-2" name="coupon" placeholder="Código de desconto">
 
-                        <span class="input-group-append">
-                            <button id="applyCouponButton"
-                                class="btn btn-primary btn-apply coupon">Aplicar</button>
-                        </span>
-                    </div>
+                    <span class="input-group-append ms-2">
+                        <button id="applyCouponButton" class="btn btn-primary btn-apply coupon">Aplicar</button>
+                    </span>
                 </div>
-            </form>
+            </div>
         </div>
 
         <div

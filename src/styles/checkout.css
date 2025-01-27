@@ -5,3 +5,8 @@
 .item-price {
     float: inline-end !important;
 }
+
+#shoppingCart {
+    max-height: 773px;
+    overflow-y: auto;
+}

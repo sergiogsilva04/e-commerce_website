@@ -30,3 +30,9 @@
     box-shadow: 0 14px 28px rgba(5, 48, 103, 0.25), 0 10px 10px rgba(5, 48, 103, 0.22) !important;
     transform: translate(0px, -4px);
 }
+
+@media (max-width: 425px) {
+    .shopping-cart {
+        width: 380px;
+    }
+}

@@ -104,14 +104,39 @@
     "services": [
         {
             "id": "service-1",
-            "name": "Vou construir o seu site Wix profissional",
+            "name": "Montagem de Computadores Personalizados",
             "category": "services",
-            "description": "O Carro da Polícia com Luzes e Som da Playmobil City Action vem com um tejadilho que sai e tem lugares para 4 figuras.",
-            "price": "1000",
-            "stars": 1,
-            "stock": 2000,
-            "image": "wix.png"
+            "description": "Serviço de montagem de computadores sob medida, onde o cliente escolhe os componentes, e a nossa equipa monta o computador de acordo com as especificações do cliente.",
+            "price": "20",
+            "stars": 4,
+            "image": "Computador.png"
+        },
+        {
+            "id": "service-2",
+            "name": "Consultoria para Escolha de Hardware",
+            "category": "services",
+            "description": "Um serviço de consultoria para ajudar os clientes a escolher os melhores componentes para as suas necessidades, seja para jogos, edição de vídeo ou uso corporativo.",
+            "price": "5",
+            "stars": 5,
+            "image": "Consultoria.png"
+        },
+        {
+            "id": "service-3",
+            "name": "Instalação de Software",
+            "category": "services",
+            "description": "Instalação de sistemas operativos, drivers e softwares básicos ou específicos.",
+            "price": "10",
+            "stars": 5,
+            "image": "PC.png"
+        },
+        {
+            "id": "service-4",
+            "name": "Reparação e Manutenção",
+            "category": "services",
+            "description": "Reparações de hardware, substituição de componentes e manutenção preventiva, como limpeza interna e reaplicação de pasta térmica.",
+            "price": "10",
+            "stars": 20,
+            "image": "Hardware.png"
         }
-    ],
-    "partners": []
+    ]
 }

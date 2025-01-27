@@ -56,18 +56,12 @@
                             <i class="fa-solid fa-user"></i>
                         </button>
 
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <div>
-                                <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
-
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-
-                                <li><a id="logoutButton" class="dropdown-item text-danger" href="login.html">Logout</a>
-                                </li>
-                            </div>
-
+                        <ul class="dropdown-menu dropdown-menu-start dropdown-menu-lg-end">
+                            <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a id="logoutButton" class="dropdown-item text-danger" href="login.html">Logout</a></li>
                             <li><a class="dropdown-item" href="login.html">Login</a></li>
                         </ul>
                     </div>
@@ -76,98 +70,99 @@
         </nav>
     </header>
 
-    <main class="container col-8 my-5 br-2 rounded">
-        <div class="row g-3">
-            <div class="col-4 order-md-last">
-                <h4 class="d-flex justify-content-between align-item-center">
-                    <span>Carrinho</span>
-                    <span id="totalItemsText" class="badge bg-success rounded-pill"></span>
+    <main class="container my-5 p-4 border rounded shadow">
+        <div class="row g-5">
+            <div class="col-md-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary"><i class="fas fa-shopping-cart me-2"></i>Carrinho</span>
+                    <span id="totalItemsText" class="badge bg-success rounded-pill">0</span>
                 </h4>
 
                 <ul id="shoppingCart" class="list-group mt-3"></ul>
             </div>
 
-            <div class="col-8">
-                <h4>Informações de envio</h4>
+            <div class="col-md-8 d-flex flex-column">
+                <div class="flex-grow-1 d-flex flex-column justify-content-between">
+                    <h4 class="mb-3"><i class="fas fa-truck me-2"></i>Informações de envio</h4>
+                    <form class="h-100 d-flex flex-column justify-content-between">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label" for="name">Nome</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
 
-                <form>
-                    <div class="row">
-                        <div class="col-12">
-                            <label class="form-label" for="name">Nome</label>
-                            <input type="text" id="name" class="form-control">
+                            <div class="col-12">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label" for="address">Morada</label>
+                                <input type="text" id="address" class="form-control" required>
+                            </div>
+                            
+                            <div class="col-md-5">
+                                <label class="form-label" for="country">País</label>
+                                <select class="form-select" id="country" required></select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label" for="city">Cidade</label>
+                                <select class="form-select" id="city" disabled></select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label" for="postalCode">Código Postal</label>
+                                <input type="text" id="postalCode" class="form-control" required>
+                            </div>
                         </div>
 
-                        <div class="col-12 mt-2">
-                            <label class="form-label" for="email">Email</label>
-                            <input type="text" id="email" class="form-control">
+                        <hr class="my-4">
+
+                        <h4 class="mb-3"><i class="fas fa-credit-card me-2"></i>Métodos de Pagamento</h4>
+
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                            <label class="form-check-label" for="credit">Cartão de crédito</label>
                         </div>
 
-                        <div class="col-12 mt-2">
-                            <label class="form-label" for="address">Morada</label>
-                            <input type="text" id="address" class="form-control">
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Cartão de débito</label>
                         </div>
 
-                        <div class="col-5 mt-2">
-                            <label class="form-label" for="country">País</label>
-                            <select class="form-select" id="country"></select>
+                        <div class="row gy-3 mt-2">
+                            <div class="col-md-6">
+                                <label class="form-label" for="cardname">Nome no cartão</label>
+                                <input type="text" id="cardname" class="form-control" required>
+                                <small class="text-muted">Nome completo igual ao cartão</small>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="creditcard">Número do cartão</label>
+                                <input type="text" id="creditcard" class="form-control" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label" for="expiration">Expira em</label>
+                                <input type="text" id="expiration" class="form-control" required>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <label class="form-label" for="cvv">CVV</label>
+                                <input type="text" id="cvv" class="form-control" required>
+                            </div>
                         </div>
 
-                        <div class="col-4 mt-2">
-                            <label class="form-label" for="city">Cidade</label>
+                        <hr class="my-4">
 
-                            <select class="form-select" id="city" disabled></select>
-                        </div>
-
-                        <div class="col-3 mt-2">
-                            <label class="form-label" for="postalCode">Código postal</label>
-                            <input type="text" id="postalCode" class="form-control">
-                        </div>
-                    </div>
-
-                    <hr class="my-4 border-2">
-
-                    <h4>Métodos de Pagamento</h4>
-
-                    <div class="form-check">
-                        <input name="cards" type="radio" class="form-check-input">
-                        <label class="form-check-label">Cartão de crédito</label>
-                    </div>
-
-                    <div class="form-check">
-                        <input name="cards" type="radio" class="form-check-input">
-                        <label class="form-check-label">Cartão de débito</label>
-                    </div>
-
-                    <div class="row mt-2">
-                        <div class="col-6">
-                            <label class="form-label" for="cardname">Nome no cartão</label>
-                            <input type="text" id="cardname" class="form-control">
-                            <small class="text-muted">Nome completo igual ao cartão</small>
-                        </div>
-
-                        <div class="col-6">
-                            <label class="form-label" for="creditcard">Número</label>
-                            <input type="text" id="creditcard" class="form-control">
-                        </div>
-
-                        <div class="col-3">
-                            <label class="form-label" for="expiration">Expira em</label>
-                            <input type="text" id="expiration" class="form-control">
-                        </div>
-
-                        <div class="col-3">
-                            <label class="form-label" for="cvv">CVV</label>
-                            <input type="text" id="cvv" class="form-control">
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <button type="submit" class="btn btn-primary btn-block mb-4 w-100">Finalizar</button>
-                </form>
+                        <button type="submit" class="btn btn-primary btn-lg w-100"><i class="fas fa-check me-2"></i>Finalizar</button>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
+
 
     <footer class="bg-dark text-white pt-5 pb-4 mt-4">
         <div class="container text-center text-md-left">
@@ -189,7 +184,6 @@
 
                     <p><a href="../index.html#products" class="text-decoration-none text-white">Produtos</a></p>
                     <p><a href="../index.html#services" class="text-decoration-none text-white">Serviços</a></p>
-                    <p><a href="../index.html#partners" class="text-decoration-none text-white">Parceiros</a></p>
                 </div>
 
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">

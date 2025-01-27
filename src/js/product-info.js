@@ -22,8 +22,7 @@ async function loadData(itemId) {
 
         const translateCategory = {
             "products": "Produtos",
-            "services": "Serviços",
-            "partners": "Parceiros"
+            "services": "Serviços"
         }
 
         $(".image-col")[0].innerHTML = `<img class="w-75" src="../assets/shop-images/${item.category}/${item.image}" alt="${item.name}">`;
@@ -33,7 +32,11 @@ async function loadData(itemId) {
         $("#itemId").html(`Código: ${item.id}`);
         $("#itemPrice").html(`${item.price}€`);
         $("#itemDescription").html(item.description);
-        $("#itemStock").html(`<b>Quantidade disponível:</b> ${item.stock}`);
+
+        if (item.category == 'products')
+            $("#itemStock").html(`<b>Quantidade disponível:</b> ${item.stock}`);
+        else 
+            $("#itemStock").remove();
 
         for (let i = 0; i < item.stars; i++) {
             $('.star-filter')[i].classList.add('star-checked');

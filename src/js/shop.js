@@ -51,12 +51,6 @@ function loadShop(category) {
 
                 break;
 
-            case "partners":
-                $(".shop-menu li")[2].classList.add("shop-active");
-                data = data.partners;
-
-                break;
-
             default:
                 category = "products";
                 data = data.products;
@@ -73,22 +67,22 @@ function loadShop(category) {
                 `<button type="button" class="disabled btn btn-secondary w-50 rounded-5 text-white fs-6 mt-2 p-2 border-0" onclick="event.preventDefault(); addItemToShoppingCart('${item.id}');">Item adicionado</button>`
                 :
                 `<button type="button" class="btn btn-secondary w-50 rounded-5 text-white fs-6 mt-2 p-2 border-0" onclick="event.preventDefault(); addItemToShoppingCart('${item.id}');">Adicionar</button>`;
-            
+
+            const hasStockMessage = item.stock > 0 ?
+                `<p style="background: #70d99e" class="p-2 rounded-3 mt-2"><i class="fa fa-check"></i> Disponível</p>`
+                :
+                `<p style="background: #ff6b6b" class="p-2 rounded-3 mt-2"><i class="fa fa-x"></i> Esgotado</p>`;
 
             htmlData += `
                 <div data-id="${item.id}" style="min-width: 300px; max-width: 300px;" class="d-flex flex-column justify-content-center align-items-center content m-3 p-3 text-center rounded-4">
-                    <img class="mb-3" style="width: 150px; height: 80px;" src="./assets/shop-images/${category}/${item.image}">
+                    <img class="mb-3" style="width: 150px; height: 80px;" src="./assets/shop-images/${category}/${item.image}" alt="${item.name}">
                     <a href="./pages/product-info.html?${item.id}" class="text-dark text-decoration-none fw-bold mt-2 fs-5">${item.name}</a>
                     
-                    ${item.stock > 0 ?
-                        `<p style="background: #70d99e" class="p-2 rounded-3 mt-2"><i class="fa fa-check"></i> Disponível</p>`
-                        :
-                        `<p style="background: #ff6b6b" class="p-2 rounded-3 mt-2"><i class="fa fa-x"></i> Esgotado</p>`
-                    }
+                    ${item.category == 'products' ? hasStockMessage : ''}
 
                     <h6 class="fs-3 mt-2">${item.price}€</h6>
                     
-                    ${item.stock > 0 ? button : ""}
+                    ${item.stock > 0 || item.category == 'services' ? button : ""}
                 </div>
             `;
         });
